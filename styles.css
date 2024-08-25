@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    width:500px;
+    height:200px;
+}
+header .StampandName img{
+    width:200px;
+    height:150px;
+}
+
+.emblem {
+    width: 80px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 10px 0;
+}
+
+.container {
+    display: flex;      
+    flex-direction: column;     
+    justify-content: center; 
+    align-items: center;
+    height: 100vh;
+    background-image: url(https://media.tenor.com/A8RkZbRNd-YAAAAM/cop-police.gif);
+    background-size: cover; 
+    opacity: 0.999;
+}
+
+.dropdown-container {
+    margin: 20px 0;
+    text-align: center; /* Center the label and dropdown */
+}
+
+.dropdown-container label {
+    font-size: 18px;
+    color: #fff; /* Text color */
+    background-color: #4CAF50; /* Background color with opacity */
+    padding: 10px 20px; /* Padding around the text */
+    border-radius: 10px; /* Rounded corners */
+    display: inline-block; /* Adjust width to content */
+    margin-right: 10px; /* Space between label and dropdown */
+    background-size: cover; /* Cover the background of the label */
+    background-position: center; /* Center the background image */
+}
+
+.dropdown {
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border: 2px solid #4CAF50;
+    border-radius: 25px;
+    background-color: #fff;
+    color: #333;
+}
+
+.controls, .dropdown-container, .manual-buttons {
+    margin: 20px 0;
+}
+
+.button {
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 8px #919291;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+    margin: 10px;
+}
+
+.button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 4px #666;
+    transform: translateY(4px);
+}
+
+.manual-buttons {
+    display: none;
+}
+
+.manual-buttons .button {
+    background-color: #008CBA;
+}
+
+.dropdown-container {
+    margin: 20px 0;
+}
+
+.dropdown {
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border: 2px solid #4CAF50;
+    border-radius: 25px;
+    background-color: #fff;
+    color: #333;
+}
+
+.traffic-light {
+    width: 120px;
+    height: 300px;
+    background-color: #000;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+    margin-top: 20px;
+}
+
+.light {
+    width: 80px;
+    height: 80px;
+    background-color: #333;
+    border-radius: 50%;
+    margin: 10px auto;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.5s;
+}
+
+.light.red.active {
+    background-color: red;
+}
+
+.light.yellow.active {
+    background-color: yellow;
+}
+
+.light.green.active {
+    background-color: green;
+}

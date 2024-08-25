@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Light Simulation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+        <div class="StampandName">
+            <img src="https://upload.wikimedia.org/wikipedia/en/e/ea/Appolice%28emblem%29.png" alt="Police Emblem" class="emblem">
+            <h1>Traffic Light Simulation</h1>
+        </div>
+        </header>
+        <div class="dropdown-container">
+            <label for="localitySelect">Select Locality:</label>
+            <select id="localitySelect" class="dropdown">
+                <option value="">Select Locality</option>
+                <option value="GoodShedCenter">Good Shed Center</option>
+                <option value="NoonepalliCenter">Noonepalli Center</option>
+                <option value="TownHallCenter">Town Hall Center</option>
+                <option value="GovtHospitalCenter">Govt Hospital Center</option>
+                <option value="NGOSColony">NGO'S Colony</option>
+                <option value="BusStandCenter">Bus Stand Center</option>
+                <option value="RailwayStationCenter">Railway Station Center</option>
+                <option value="SBIBankCenter">SBI Bank Center </option>
+                <option value="TeacherColonyCenter">Teacher Colony Center</option>
+                <option value="SPGGroundCenter">SPG Ground Center</option>
+            </select>
+        </div>
+
+        <div class="controls">
+            <button id="startAuto" class="button">Start Auto Mode</button>
+            <button id="manualToggle" class="button">Manual Mode</button>
+        </div>
+
+        <div class="manual-buttons" id="manualButtons">
+            <button class="button" id="freeRight">Free Right</button>
+            <button class="button" id="freeLeft">Free Left</button>
+            <button class="button" id="freeUp">Free Up</button>
+            <button class="button" id="freeDown">Free Down</button>
+        </div>
+
+        <div class="traffic-light">
+            <div class="light red" id="redLight"></div>
+            <div class="light yellow" id="yellowLight"></div>
+            <div class="light green" id="greenLight"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
